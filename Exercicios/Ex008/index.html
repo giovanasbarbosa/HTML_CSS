@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        mark{
+            background-color: lime;
+        }
+    </style> <!-- Você pode marcar todos os marks em linguagem css para mudar todos! -->
+    <title>Formatação de textos</title>
+</head>
+<body>
+    <h1>Principais formatações</h1>
+    <h2>Negrito/Destaquee</h1>
+        <p>Nessa frase, temos um <b>termo em negrito</b> usando a tag &ltb&gt (não semântica).</p>
+        <p>Nesta frase, tenho um <strong>termo em destaque</strong> usando a tag &ltstrong&gt (semântica).</p>
+    <!-- Visualmente é a mesma coisa, mas o strong, além da forma, ele dá um sentido a esse termo, ele diz que aquele termo é forte -->
+    <h2>Itálico/Ênfase</h2>
+        <p>Nesta frase, temos um <i>termo em itálico</i> usando a tag &lti&gt (não semântica).</p>
+        <p>Nesta frase, temos um <em>termo em ênfase</em> usando a tag &ltem&gt (semântica).</p>
+        <p>Selecione a frase, command + shift + p e "Wrap with abbreviation" e digita o caractere da tag para adicionar tags a porções do texto. Foque em &ltstrong&gt e &ltem&gt e esqueça &ltb&gt e &lti&gt, deixe essa questão de forma para o css. Forma CSS e sentido HTML. </p>
+    <h2>Texto marcado</h2>
+        <p>Podemos criar um <mark>texto marcado</mark> usando a tag &ltmark&gt</p>
+    <!-- O mark, por não ser css, não dá pra alterar a cor amarela  -->
+        <p>Podemos criar um <mark style="background-color: green
+        ;">texto marcado</mark> usando a tag &ltmark&gt</p>
+    <!-- Adicionando "style='background-clor: color' dentro da tag mark, você associa a linguagem css pra resolver -->
+    <h2>Texto grande e pequeno</h2>
+            <p>Estamos criando um <big>texto grande</big> e <small>pequeno</small> neste parágrafo.</p>
+</body>
+</html>

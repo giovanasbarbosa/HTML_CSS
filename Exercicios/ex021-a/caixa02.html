@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping tags</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #fbdce8;
+        }
+        header{
+            background-color:
+            #F291BFDC;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 15px;
+            text-align: center;
+            color:white;
+            box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.149);
+        }
+
+            color:#fff2f5;
+        }
+        nav{
+            background-color: #fbdce8;
+            padding: 5px;
+            border-radius: 5px;
+            margin:auto;
+            box-shadow: inset 1px 1px 8px rgba(0, 0, 0, 0.085);
+        }
+        nav > a{
+            text-decoration: none;
+            color: #bc6292;
+            font-weight: bold;
+            margin: 25px;
+        }
+        nav > a:hover{
+            text-decoration: underline;
+        }
+        main{
+            background-color: #F291BF;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 15px;
+            box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.149);
+        }
+        section#assuntos{
+            text-indent: 25px;
+            color: white;
+            font-style: italic;
+        }
+        section#previsao{
+            text-indent: 25px;
+            color: white;
+            font-style: italic;
+        }
+        section#conteudo > article{
+            background-color: #ffe5eb;
+            padding:15px 25px 15px 25px;
+            border-radius: 10px;
+            width: fit-content;
+            text-align: justify;
+            color:#85385f;
+            box-shadow: inset 1px 1px 8px rgba(0, 0, 0, 0.149);
+        }
+        section#noticias > article{
+            background-color: #ffe5eb;
+            padding: 15px 25px 15px 25px; 
+            border-radius: 10px;
+            width:fit-content;
+            text-align: justify;
+            color:#85385f;
+            box-shadow: inset 1px 1px 8px rgba(0, 0, 0, 0.149);
+            
+        }
+        section#conteudo > article > p{
+            text-indent: 50px;
+            color:#85385f;
+        }
+        section#noticias > article > p{
+            text-indent: 50px;
+            color:#85385f;
+        }
+        article > aside{
+            color:#91205548;
+            font-style:italic;
+        }
+        footer{
+            color:#9120556f;
+            text-align: center;
+            width: fit-content;
+            margin: auto;
+            padding:4px;
+        }
+        footer>p{
+            margin:0px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 id="tit">Exemplo de site</h1>
+        <nav>
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+            <a href="#">Link 4</a>
+            <a href="#">Link 5</a>
+        </nav>
+    </header>
+    <main>
+        <section id="assuntos">
+            <p>Lorem ipsum, dolor sit amet.</p>
+        </section>
+        <section id="noticias">
+            <article>
+                <h2>Lorem ipsum dolor </h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium odit aperiam, quidem fugit dolor, repellat nostrum quo nam quia obcaecati perspiciatis! Voluptatibus quisquam vero itaque nostrum reiciendis eligendi animi repellendus!</p>
+                    <aside>
+                        <p>Artigo escrito por Giovana Barbosa</p>
+                    </aside>
+            </article>
+    </main>
+    <main>
+        <section id="previsao">
+            <p>Lorem ipsum dolor sit amet.</p>
+        </section>
+        <section id="conteudo"> 
+            <article>
+                <h2>Lorem ipsum dolor sit amet</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur doloremque vitae illo quidem assumenda asperiores ipsam laborum fugiat optio amet, cum aliquam, maxime illum sapiente maiores ad minus cumque iusto!</p>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvido por Giovana Barbosa</p>
+    </footer>
+</body>
+</html>

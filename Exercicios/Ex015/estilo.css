@@ -1,0 +1,18 @@
+@charset "UTF-8";
+
+body{
+    background-color: pink;
+    font-family: Helvetica;
+    font-size: 20px;
+    text-align: justify;
+}
+h1{
+    color:rgb(100, 39, 50);
+}
+h2{
+    color:rgb(169, 79, 81);
+    background-color: rgb(255, 225, 225);
+}
+p{
+    text-align: justify;
+}
