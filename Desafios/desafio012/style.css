@@ -1,11 +1,11 @@
 @charset "UTF-8";
 
-@import url('https://fonts.googleapis.com/css2?family=Passion+One&family=Sriracha&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yeseva+One&family=Yuji+Syuku&display=swap');
 
 :root{
     --font1: Verdana, Geneva, Tahoma, sans-serif;
-    --font2: 'Passion One', cursive;
-    --font3: 'Sriracha', cursive;
+    --font2: 'Yeseva One', cursive;
+    --font3: 'Yuji Syuku', serif;
 
 }
 
@@ -28,9 +28,9 @@ header{
 
 header h1{
     padding-top: 50px;
-    font-variant: small-caps;
     font-family: var(--font2);
-    font-size: 10vw;
+    font-size: 8vw;
+    font-weight: normal;
 }
 header p{
     padding-bottom: 50px;
@@ -52,6 +52,9 @@ section{
     font-family: var(--font3);
     font-size: 3.5vw;
 }
+section p{
+    padding-bottom: 2em;
+}
 section.normal{
     background-color: white;
     color: black;
@@ -59,11 +62,24 @@ section.normal{
 section.imagem{
     background-color: rgb(50, 47, 47);
     color: white;
+    box-shadow: inset 1px 1px 4px rgba(0, 0, 0, 0.636);
+    background-attachment: fixed;
+}
+section#img01{
+    background-image: url(imagens/roads.jpg);
+    background-position: center bottom;
+    background-size: cover;
+}
+section#img02{
+    background-image: url(imagens/landscape.jpg);
+    background-position: center center;
+    background-size: cover;
 }
 section.imagem p{
     display: inline-block;
     padding: 5px;
-    background-color: rgba(0, 0, 0, 0.267);
+    background-color: rgba(0, 0, 0, 0.379);
+    text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.565);
 }
 footer{
     background-color: black;
