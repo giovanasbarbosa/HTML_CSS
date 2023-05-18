@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uso de iframe</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        iframe#tela{
+            width: 90vw;
+            height: 400px;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Faça uma escolha</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At, error minus provident eius nostrum eaque saepe laborum tempore mollitia rerum fugiat debitis facilis voluptatem blanditiis dolor. Atque vel consequuntur dolor?</p>
+
+    <ul>
+        <li><a href="paginas-extras/pagina001.html" target="frame">Primeira página</a></li>
+        <li><a href="paginas-extras/pag002.html" target="frame">Segunda página</a></li>
+        <li><a href="paginas-extras/pag003.html" target="frame">Terceira página</a></li>
+    </ul>
+
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto, qui! Illum numquam commodi dolorum, eius blanditiis nostrum perferendis eaque, voluptatem aliquam vero repellat, enim soluta error eligendi labore et libero.</p>
+
+    <iframe id="tela" name="frame" srcdoc="<h1>Escolha uma das opções acima</h1> <img src='https://assets.pokemon.com/assets/cms2/img/pokedex/full/572.png' width='200px'>">
+        <p class="erro">Infelizmente o seu navegador não é compatível com o conteúdo.</p>
+    </iframe>
+
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga quibusdam cumque magni dolorum odio animi incidunt, libero amet enim, explicabo vero quas nostrum velit ea. Iusto repudiandae et nisi deserunt? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae praesentium natus eos nobis, iste accusantium similique dicta ipsum soluta quibusdam atque illo doloribus maxime explicabo doloremque quae iusto ipsa rerum.</p>
+</body>
+</html>
