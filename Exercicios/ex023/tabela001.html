@@ -4,54 +4,78 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Minha primeira tabela</title>
+    <title>Nomes e Filmes</title>
     <style>
         body{
             font-family: Arial, Helvetica, sans-serif;
         }
         table{
-            width: 400px;
-            height: 400px;
+            width: 600px;
             border-collapse: collapse;
         }
-        td{
+        td, th{
             border: 1px solid black;
-            padding: 8px;
-            text-align: center; /*Alinhamento horizontal*/
-            vertical-align: middle; /*Alinhamento vertical*/
+            padding: 5px;
+        }
+        caption{
+            font-size: 1em;
+            font-weight: bold;
+            text-align: left;
+            padding: 10px;
         }
     </style>
 </head>
 <body>
-    <h1>Minha primeira tabela</h1>
-    <!-- 
-        HIERAQUIA DE TABELAS (Simples)
-        TABLE = tabela
-            TABLE ROW = LINHA DA TABELA
-                TABLE HEADER = CABEÇALHO DE TABELA
-                TABLE DATA = DADO DE TABELA
-    -->
+    <h1>Exercício de Tabelas</h1>
     <table>
-        <tr> <!-- Primeira linha -->
-            <td>A1</td>
-            <td>B1</td>
-            <td>C1</td>
-        </tr>
-        <tr>
-            <td>A2</td>
-            <td>B2</td>
-            <td>C2</td>
-        </tr>
-        <tr>
-            <td>A3</td>
-            <td>B3</td>
-            <td>C3</td>
-        </tr>
-        <tr>
-            <td>A4</td>
-            <td>B4</td>
-            <td>C4</td>
-        </tr>
+        <caption>Filmes favoritos</caption>
+        <thead>
+            <tr>
+                <th scope="col">Grupo</th>
+                <th scope="col">Nomes</th>
+                <th colspan="3" scope="colgroup">Filmes</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th rowspan="3" scop="rowgroup">Mulheres</th>
+                <td>Ana Maria Santos</td>
+                <td>Alien</td>
+                <td>Rambo</td>
+                <td>Vingadores</td>
+            </tr>
+            <tr>
+                <td>Beatriz Souza</td>
+                <td>Hulk</td>
+                <td>Inception</td>
+                <td>Batman</td>
+            </tr>
+            <tr>
+                <td>Cláudia Melo</td>
+                <td>Oblivion</td>
+                <td>Matrix</td>
+                <td>Big Hero</td>
+            </tr>
+            <tr>
+                <th rowspan="3" scope="rowgroup">Homens</th>
+                <td>Bruno Mendonça</td>
+                <td>Intocáveis</td>
+                <td>Amnésia</td>
+                <td>Gladiador</td>
+            </tr>
+            <tr>
+                <td>Daniel Lourenço</td>
+                <td>Wall-E</td>
+                <td>Oldboy</td>
+                <td>Dangal</td>
+            </tr>
+            <tr>
+                <td>Fabiano Moura</td>
+                <td>Star Wars 5</td>
+                <td>Taxi Driver</td>
+                <td>Toy Story</td>
+            </tr>
+        </tbody>
     </table>
 </body>
 </html>
