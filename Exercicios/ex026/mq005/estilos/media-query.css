@@ -1,0 +1,27 @@
+@charset "UTF-8";
+
+/*
+TYPICAL DEVIDE BREAKPOINTS (W3C)
+--------------------------------
+PEQUENAS TELAS: ATÉ 600PX
+CELULAR: 600-768PX
+TABLET: 758-992PX
+DESKTOP: 992PX - 1200
+GRANDES TELAS: >1200PX
+*/
+
+@media screen and (min-width:768px){
+    span#burger{
+        display:none;
+    }
+    menu{
+        display: block;
+
+    }
+    menu ul li{
+        display: inline-block;
+    }
+    main{
+        max-width: 768px;
+    }
+}
