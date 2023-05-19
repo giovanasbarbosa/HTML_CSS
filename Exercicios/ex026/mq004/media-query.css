@@ -1,0 +1,85 @@
+@charset "UTF-8";
+/* TODAS AS DEMAIS MÍDIAS */
+
+/* 
+TYPICAL DEVIDE BREAKPOINTS (W3C)
+--------------------------------
+PEQUENAS TELAS: ATÉ 600PX
+CELULAR: 600-768PX
+TABLET: 758-992PX
+DESKTOP: 992PX - 1200
+GRANDES TELAS: >1200PX
+*/
+
+@media print{
+    *{
+        font-family: 'Courier New', Courier, monospace;
+    }
+    body{
+        background-image: url(imagens/back-print.jpg); /*Desnecessário, não se imprime background*/
+    }
+    main{
+        border: 2px solid black;
+    }
+    main h1{
+        text-shadow: none;
+        color:black;
+    }
+    img{
+        display: block;
+        margin: auto;
+    }
+    img#phone{display:none;}
+    img#tablet{display:none;}
+    img#print{display:block;}
+    img#pc{display:none;}
+    img#tv{display:none}
+}
+/*
+NÃO SÃO NECESSÁRIAS PORQUE JÁ FIZEMOS O SITE PARA MOBILE FIRST!
+@media screen and (max-width: 600px){}
+@media screen and (min-width: 600px) and (max-width:768px){}
+*/
+@media screen and (min-width:758px) and (max-width:992px){
+    body{
+        background-image: url(imagens/back-tablet.jpg);
+    }
+    img{
+        display: block;
+        margin: auto;
+    }
+    img#phone{display:none;}
+    img#tablet{display:block;}
+    img#print{display:none;}
+    img#pc{display:none;}
+    img#tv{display:none}
+}
+@media screen and (min-width:992px) and (max-width:1200px){
+    body{
+        background-image: url(imagens/back-pc.jpg);
+    }
+    img{
+        display: block;
+        margin: auto;
+    }
+    img#phone{display:none;}
+    img#tablet{display:none;}
+    img#print{display:none;}
+    img#pc{display:block;}
+    img#tv{display:none}
+}
+@media screen and (min-width:1200px){
+    body{
+        background-image: url(imagens/back-tv.jpg);
+    }
+    img{
+        display: block;
+        margin: auto;
+    }
+    img#phone{display:none;}
+    img#tablet{display:none;}
+    img#print{display:none;}
+    img#pc{display:none;}
+    img#tv{display:block}
+}
+
