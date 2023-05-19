@@ -18,7 +18,7 @@
     padding:0px;
 }
 body,html{
-    background-color: var(--cor1);
+    background-image: url(https://i.pinimg.com/736x/ed/f7/d3/edf7d37204e846ba03f0c1fd735eb274.jpg);
 }
 header{
     background-color:var(--cor2);
@@ -124,12 +124,20 @@ article p#page{
 }
 footer{
     text-align: center;
-    margin:10px;
+    margin:auto;
+    background-color: var(--cor1);
+    border-radius: 40px;
+    margin-bottom: 20px;
+    width: 230px;
+    padding:10px;
     color:rgba(0, 0, 0, 0.6);
-    padding-bottom: 20px;
 }
 footer a{
     text-decoration: none;
     font-size: 1em;
-    color:rgba(0, 0, 0, 0.6);
+    color:var(--cor4);
+}
+footer a:hover{
+    text-decoration: underline;
+    color: var(--cor3);
 }
