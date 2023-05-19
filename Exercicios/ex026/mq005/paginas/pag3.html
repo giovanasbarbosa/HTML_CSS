@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Moon and the Yew Tree</title>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="../estilos/style.css">
+        <link rel="stylesheet" href="../estilos/media-query.css">
+</head>
+<body onresize="mudoutamanho()">
+    <header>
+        <h1>Poetry Nook</h1>
+        <p>Sylvia Plath: top 5 best poems</p>
+        <span class="material-icons" id="burger" onclick="clickmenu()">menu</span>
+        <menu id="itens">
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="pag1.html">Lady Lazarus</a></li>
+                <li><a href="pag2.html">Daddy</a></li>
+                <li><a href="pag4.html">You're</a></li>
+                <li><a href="pag5.html">Morning Song</a></li>
+            </ul>
+        </menu>
+    </header>
+    <main>
+        <article>
+            <h2>"The Moon and the Yew Tree"</h2>
+            <h3>Source: Collected Poems (HarperCollins Publishers Inc, 1992)</h3>
+            <p id="page">
+                    This is the light of the mind, cold and planetary<br>
+                    The trees of the mind are black. The light is blue.<br>
+                    The grasses unload their griefs on my feet as if I were God<br>
+                    Prickling my ankles and murmuring of their humility<br>
+                    Fumy, spiritous mists inhabit this place.<br>
+                    Separated from my house by a row of headstones.<br>
+                    I simply cannot see where there is to get to.<br>
+                    <br>
+                    The moon is no door. It is a face in its own right,<br>
+                    White as a knuckle and terribly upset.<br>
+                    It drags the sea after it like a dark crime; it is quiet<br>
+                    With the O-gape of complete despair. I live here.<br>
+                    Twice on Sunday, the bells startle the sky —<br>
+                    Eight great tongues affirming the Resurrection<br>
+                    At the end, they soberly bong out their names.<br>
+                    <br>
+                    The yew tree points up, it has a Gothic shape.<br>
+                    The eyes lift after it and find the moon.<br>
+                    The moon is my mother. She is not sweet like Mary.<br>
+                    Her blue garments unloose small bats and owls.<br>
+                    How I would like to believe in tenderness –<br>
+                    The face of the effigy, gentled by candles,<br>
+                    Bending, on me in particular, its mild eyes.<br>
+                    <br>
+                    I have fallen a long way. Clouds are flowering<br>
+                    Blue and mystical over the face of the stars<br>
+                    Inside the church, the saints will all be blue,<br>
+                    Floating on their delicate feet over the cold pews,<br>
+                    Their hands and faces stiff with holiness.<br>
+                    The moon sees nothing of this. She is bald and wild.<br>
+                    And the message of the yew tree is blackness – blackness and silence.<br>
+                        <br>
+                        <br>
+                    -Sylvia Plath
+            </p>
+        </article>
+    </main>
+    <footer>
+        <p>Developed by <a href="https://github.com/giovanasbarbosa">Giovana Barbosa</a></p>
+    </footer>
+    <script>
+        function clickmenu(){
+            if(itens.style.display=='block'){
+                itens.style.display='none'
+            }else{
+                itens.style.display='block'
+            }
+        }
+        function mudoutamanho(){
+            if(window.innerWidth >= 768){
+                itens.style.display='block'
+            }else{
+                itens.style.display='none'
+            }
+        }
+    </script>
+</body>
+</html>

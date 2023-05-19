@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lady Lazarus</title>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="../estilos/style.css">
+        <link rel="stylesheet" href="../estilos/media-query.css">
+
+</head>
+<body onresize="mudoutamanho()">
+    <header>
+        <h1>Poetry Nook</h1>
+        <p>Sylvia Plath: top 5 best poems</p>
+        <span class="material-icons" id="burger" onclick="clickmenu()">menu</span>
+        <menu id="itens">
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="pag2.html">Daddy</a></li>
+                <li><a href="pag3.html">The Moon and the Yew Tree</a></li>
+                <li><a href="pag4.html">You're</a></li>
+                <li><a href="pag5.html">Morning Song</a></li>
+            </ul>
+        </menu>
+    </header>
+    <main>
+        <article>
+            <h2>"Lady Lazarus"</h2>
+            <h3>Source: Collected Poems (HarperCollins Publishers Inc, 1992)</h3>
+            <p id="page">
+                    I have done it again. <br>
+                    One year in every ten <br>
+                    I manage it—— <br>
+                    <br>
+                    A sort of walking miracle, my skin <br>
+                    Bright as a Nazi lampshade, <br>
+                    My right foot <br>
+                    <br>
+                    A paperweight, <br>
+                    My face a featureless, fine <br>
+                    Jew linen. <br>
+                    <br>
+                    Peel off the napkin <br>
+                    O my enemy. <br>
+                    Do I terrify?—— <br>
+                    <br>
+                    The nose, the eye pits, the full set of teeth? <br>
+                    The sour breath <br>
+                    Will vanish in a day. <br>
+                    <br>
+                    Soon, soon the flesh <br>
+                    The grave cave ate will be <br>
+                    At home on me <br>
+                    <br>
+                    And I a smiling woman.<br>
+                    I am only thirty.<br>
+                    And like the cat I have nine times to die.<br>
+                    <br>
+                    This is Number Three.<br>
+                    What a trash<br>
+                    To annihilate each decade.<br>
+                    <br>
+                    What a million filaments.<br>
+                    The peanut-crunching crowd<br>
+                    Shoves in to see<br>
+                    <br>
+                    Them unwrap me hand and foot——<br>
+                    The big strip tease.<br>
+                    Gentlemen, ladies<br>
+                    <br>
+                    These are my hands<br>
+                    My knees.<br>
+                    I may be skin and bone,<br>
+                    <br>
+                    Nevertheless, I am the same, identical woman.<br>
+                    The first time it happened I was ten.<br>
+                    It was an accident.<br>
+                    <br>
+                    The second time I meant<br>
+                    To last it out and not come back at all.<br>
+                    I rocked shut<br>
+                    <br>
+                    As a seashell.<br>
+                    They had to call and call<br>
+                    And pick the worms off me like sticky pearls.<br>
+                    <br>
+                    Dying<br>
+                    Is an art, like everything else.<br>
+                    I do it exceptionally well.<br>
+                    <br>
+                    I do it so it feels like hell.<br>
+                    I do it so it feels real.<br>
+                    I guess you could say I’ve a call.<br>
+                    <br>
+                    It’s easy enough to do it in a cell.<br>
+                    It’s easy enough to do it and stay put.<br>
+                    It’s the theatrical<br>
+                    <br>
+                    Comeback in broad day<br>
+                    To the same place, the same face, the same brute<br>
+                    Amused shout:<br>
+                    <br>
+                    ‘A miracle!’<br>
+                    That knocks me out.<br>
+                    There is a charge<br>
+                    <br>
+                    For the eyeing of my scars, there is a charge<br>
+                    For the hearing of my heart——<br>
+                    It really goes.<br>
+                    <br>
+                    And there is a charge, a very large charge<br>
+                    For a word or a touch<br>
+                    Or a bit of blood<br>
+                    <br>
+                    Or a piece of my hair or my clothes.<br>
+                    So, so, Herr Doktor.<br>
+                    So, Herr Enemy.<br>
+                    <br>
+                    I am your opus,<br>
+                    I am your valuable,<br>
+                    The pure gold baby<br>
+                    <br>
+                    That melts to a shriek.<br>
+                    I turn and burn.<br>
+                    Do not think I underestimate your great concern.<br>
+                    <br>
+                    Ash, ash—<br>
+                    You poke and stir.<br>
+                    Flesh, bone, there is nothing there——<br>
+                    <br>
+                    A cake of soap,<br>
+                    A wedding ring,<br>
+                    A gold filling.<br>
+                    <br>
+                    Herr God, Herr Lucifer<br>
+                    Beware<br>
+                    Beware.<br>
+                    <br>
+                    Out of the ash<br>
+                    I rise with my red hair<br>
+                    And I eat men like air.<br>
+                    <br>
+                    <br>
+                    -Sylvia Plath
+            </p>
+        </article>
+    </main>
+    <footer>
+        <p>Developed by <a href="https://github.com/giovanasbarbosa">Giovana Barbosa</a></p>
+    </footer>
+    <script>
+        function clickmenu(){
+            if(itens.style.display=='block'){
+                itens.style.display='none'
+            }else{
+                itens.style.display='block'
+            }
+        }
+        function mudoutamanho(){
+            if(window.innerWidth >= 768){
+                itens.style.display='block'
+            }else{
+                itens.style.display='none'
+            }
+        }
+    </script>
+</body>
+</html>

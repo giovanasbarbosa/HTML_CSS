@@ -16,10 +16,16 @@ GRANDES TELAS: >1200PX
     }
     menu{
         display: block;
-
+    }
+    menu ul{
+        text-align: center;
     }
     menu ul li{
         display: inline-block;
+    }
+    a{
+        border-radius: 10px;
+        font-size: 0.9em;
     }
     main{
         max-width: 768px;

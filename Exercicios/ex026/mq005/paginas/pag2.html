@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daddy</title>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="../estilos/style.css">
+        <link rel="stylesheet" href="../estilos/media-query.css">
+</head>
+<body onresize="mudoutamanho()">
+    <header>
+        <h1>Poetry Nook</h1>
+        <p>Sylvia Plath: top 5 best poems</p>
+        <span class="material-icons" id="burger" onclick="clickmenu()">menu</span>
+        <menu id="itens">
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="pag1.html">Lady Lazarus</a></li>
+                <li><a href="pag3.html">The Moon and the Yew Tree</a></li>
+                <li><a href="pag4.html">You're</a></li>
+                <li><a href="pag5.html">Morning Song</a></li>
+            </ul>
+        </menu>
+    </header>
+    <main>
+        <article>
+            <h2>"Daddy"</h2>
+            <h3>Source: Collected Poems (HarperCollins Publishers Inc, 1992)</h3>
+            <p id="page">
+                    You do not do, you do not do<br>   
+                    Any more, black shoe<br>
+                    In which I have lived like a foot<br>
+                    For thirty years, poor and white,<br>
+                    Barely daring to breathe or Achoo.<br>
+                    <br>
+                    Daddy, I have had to kill you.<br>
+                    You died before I had time—-<br>
+                    Marble-heavy, a bag full of God<br>
+                    Ghastly statue with one gray toe<br>
+                    Big as a Frisco seal<br>
+                    <br>
+                    And a head in the freakish Atlantic<br>   
+                    Where it pours bean green over blue<br>   
+                    In the waters off beautiful Nauset.<br>   
+                    I used to pray to recover you.<br>
+                    Ach, du.<br>
+                    <br>
+                    In the German tongue, in the Polish town<br>   
+                    Scraped flat by the roller<br>
+                    Of wars, wars, wars.<br>
+                    But the name of the town is common.<br>   
+                    My Polack friend<br>
+                    <br>
+                    Says there are a dozen or two.<br>   
+                    So I never could tell where you<br>   
+                    Put your foot, your root,<br>
+                    I never could talk to you.<br>
+                    The tongue stuck in my jaw.<br>
+                    <br>
+                    It stuck in a barb wire snare.<br>   
+                    Ich, ich, ich, ich,<br>
+                    I could hardly speak.<br>
+                    I thought every German was you.<br>   
+                    And the language obscene<br>
+                    <br>
+                    An engine, an engine<br>
+                    Chuffing me off like a Jew.<br>
+                    A Jew to Dachau, Auschwitz, Belsen.<br>   
+                    I began to talk like a Jew.<br>
+                    I think I may well be a Jew.<br>
+                    <br>
+                    The snows of the Tyrol, the clear beer of Vienna<br>   
+                    Are not very pure or true.<br>
+                    With my gipsy ancestress and my weird luck<br>   
+                    And my Taroc pack and my Taroc pack<br>
+                    I may be a bit of a Jew.<br>
+                    <br>
+                    I have always been scared of you,<br>
+                    With your Luftwaffe, your gobbledygoo.<br>   
+                    And your neat mustache<br>
+                    And your Aryan eye, bright blue.<br>
+                    Panzer-man, panzer-man, O You——<br>
+                   <br> 
+                    Not God but a swastika<br>
+                    So black no sky could squeak through.<br>   
+                    Every woman adores a Fascist,<br>   
+                    The boot in the face, the brute <br>  
+                    Brute heart of a brute like you.<br>
+                    <br>
+                    You stand at the blackboard, daddy,<br>   
+                    In the picture I have of you,<br>
+                    A cleft in your chin instead of your foot <br>  
+                    But no less a devil for that, no not<br>   
+                    Any less the black man who<br>
+                    <br>
+                    Bit my pretty red heart in two.<br>
+                    I was ten when they buried you.<br>   
+                    At twenty I tried to die<br>
+                    And get back, back, back to you.<br>
+                    I thought even the bones would do.<br>
+                    <br>
+                    But they pulled me out of the sack,<br>   
+                    And they stuck me together with glue.<br>   
+                    And then I knew what to do.<br>
+                    I made a model of you,<br>
+                    A man in black with a Meinkampf look<br>
+                    <br>
+                    And a love of the rack and the screw.<br>   
+                    And I said I do, I do.<br>
+                    So daddy, I’m finally through.<br>
+                    The black telephone’s off at the root,<br>   
+                    The voices just can’t worm through.<br>
+                    <br>
+                    If I’ve killed one man, I’ve killed two——<br>
+                    The vampire who said he was you<br>   
+                    And drank my blood for a year,<br>
+                    Seven years, if you want to know.<br>
+                    Daddy, you can lie back now.<br>
+                    <br>
+                    There’s a stake in your fat black heart<br>   
+                    And the villagers never liked you.<br>
+                    They are dancing and stamping on you.<br>   
+                    They always knew it was you.<br>
+                    Daddy, daddy, you bastard, I’m through.<br>
+                        <br>
+                        <br>
+                    -Sylvia Plath
+            </p>
+        </article>
+    </main>
+    <footer>
+        <p>Developed by <a href="https://github.com/giovanasbarbosa">Giovana Barbosa</a></p>
+    </footer>
+    <script>
+        function clickmenu(){
+            if(itens.style.display=='block'){
+                itens.style.display='none'
+            }else{
+                itens.style.display='block'
+            }
+        }
+        function mudoutamanho(){
+            if(window.innerWidth >= 768){
+                itens.style.display='block'
+            }else{
+                itens.style.display='none'
+            }
+        }
+    </script>
+</body>
+</html>

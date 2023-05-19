@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Morning Song</title>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="../estilos/style.css">
+        <link rel="stylesheet" href="../estilos/media-query.css">
+</head>
+<body onresize="mudoutamanho()">
+    <header>
+        <h1>Poetry Nook</h1>
+        <p>Sylvia Plath: top 5 best poems</p>
+        <span class="material-icons" id="burger" onclick="clickmenu()">menu</span>
+        <menu id="itens">
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="pag1.html">Lady Lazarus</a></li>
+                <li><a href="pag2.html">Daddy</a></li>
+                <li><a href="pag3.html">The Moon and the Yew Tree</a></li>
+                <li><a href="pag4.html">You're</a></li>
+            </ul>
+        </menu>
+    </header>
+    <main>
+        <article>
+            <h2>"Morning Song"</h2>
+            <h3>Source: Collected Poems (HarperCollins Publishers Inc, 1992)</h3>
+            <p id="page">
+                    Love set you going like a fat gold watch.<br>
+                    The midwife slapped your footsoles, and your bald cry<br>   
+                    Took its place among the elements.<br>
+                    <br>
+                    Our voices echo, magnifying your arrival. New statue.<br>
+                    In a drafty museum, your nakedness<br>
+                    Shadows our safety. We stand round blankly as walls.<br>
+                    <br>
+                    I’m no more your mother<br>
+                    Than the cloud that distills a mirror to reflect its own slow<br>
+                    Effacement at the wind’s hand.<br>
+                    <br>
+                    All night your moth-breath<br>
+                    Flickers among the flat pink roses. I wake to listen:<br>
+                    A far sea moves in my ear.<br>
+                    <br>
+                    One cry, and I stumble from bed, cow-heavy and floral<br>
+                    In my Victorian nightgown.<br>
+                    Your mouth opens clean as a cat’s. The window square<br>
+                    <br>
+                    Whitens and swallows its dull stars. And now you try<br>
+                    Your handful of notes;<br>
+                    The clear vowels rise like balloons.<br>
+                        <br>
+                        <br>
+                    -Sylvia Plath
+            </p>
+        </article>
+    </main>
+    <footer>
+        <p>Developed by <a href="https://github.com/giovanasbarbosa">Giovana Barbosa</a></p>
+    </footer>
+    <script>
+        function clickmenu(){
+            if(itens.style.display=='block'){
+                itens.style.display='none'
+            }else{
+                itens.style.display='block'
+            }
+        }
+        function mudoutamanho(){
+            if(window.innerWidth >= 768){
+                itens.style.display='block'
+            }else{
+                itens.style.display='none'
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>You're</title>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="../estilos/style.css">
+        <link rel="stylesheet" href="../estilos/media-query.css">
+</head>
+<body onresize="mudoutamanho()">
+    <header>
+        <h1>Poetry Nook</h1>
+        <p>Sylvia Plath: top 5 best poems</p>
+        <span class="material-icons" id="burger" onclick="clickmenu()">menu</span>
+        <menu id="itens">
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="pag1.html">Lady Lazarus</a></li>
+                <li><a href="pag2.html">Daddy</a></li>
+                <li><a href="pag3.html">The Moon and the Yew Tree</a></li>
+                <li><a href="pag5.html">Morning Song</a></li>
+            </ul>
+        </menu>
+    </header>
+    <main>
+        <article>
+            <h2>"You're"</h2>
+            <h3>Source: Collected Poems (HarperCollins Publishers Inc, 1992)</h3>
+            <p id="page">
+                    Clownlike, happiest on your hands,<br>   
+                    Feet to the stars, and moon-skulled,<br>   
+                    Gilled like a fish. A common-sense<br>   
+                    Thumbs-down on the dodo’s mode.<br>   
+                    Wrapped up in yourself like a spool,<br>   
+                    Trawling your dark as owls do.<br>   
+                    Mute as a turnip from the Fourth<br>   
+                    Of July to All Fools’ Day,<br>
+                    O high-riser, my little loaf.<br>
+                    <br>
+                    Vague as fog and looked for like mail.<br>   
+                    Farther off than Australia.<br>
+                    Bent-backed Atlas, our traveled prawn.<br>   
+                    Snug as a bud and at home<br>  
+                    Like a sprat in a pickle jug.<br>   
+                    A creel of eels, all ripples.<br>   
+                    Jumpy as a Mexican bean.<br>   
+                    Right, like a well-done sum.<br>   
+                    A clean slate, with your own face on.<br>
+                        <br>
+                        <br>
+                    -Sylvia Plath
+            </p>
+        </article>
+    </main>
+    <footer>
+        <p>Developed by <a href="https://github.com/giovanasbarbosa">Giovana Barbosa</a></p>
+    </footer>
+    <script>
+        function clickmenu(){
+            if(itens.style.display=='block'){
+                itens.style.display='none'
+            }else{
+                itens.style.display='block'
+            }
+        }
+        function mudoutamanho(){
+            if(window.innerWidth >= 768){
+                itens.style.display='block'
+            }else{
+                itens.style.display='none'
+            }
+        }
+    </script>
+</body>
+</html>
